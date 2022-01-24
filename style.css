@@ -1,0 +1,417 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vw;
+    box-sizing: border-box;
+    background-color:#776e65;
+    text-align: center;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden;
+}
+
+.game_place{
+    margin: 0 auto;
+    display: inline-block;
+    width: 500px;
+    
+    
+}
+.head_game {
+    width: 100%;
+}
+.game_about {
+    width: 100%;
+}
+.game_view {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(117, 116, 115);
+    border-radius: 7px;
+    overflow: hidden;
+}
+.game_view .game_cell {
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+    margin: 7px;
+    position: relative;
+    border-radius: 7px;
+    background-color: rgb(160, 154, 153);
+}
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    width: 112px;
+    height: 112px;
+    border-radius: 7px;
+    visibility: visible;
+    font-size: 36px;
+
+    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+    overflow: hidden;
+}
+.tile-container {
+    visibility: hidden;
+}
+
+.title_2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #776e65;
+    background: #d8cdc2;
+}
+
+.title_4 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #665e56;
+    background: #beb4a9;
+}
+
+.title_8 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #f9f6f2;
+    background: #f3b27a;
+}
+
+.title_16 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #f9f6f2;
+    background: #e49171;
+}
+
+.title_32 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #f9f6f2;
+    background: #e66b5b;
+} 
+
+.title_64 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #f9f6f2;
+    background: #e04c39;
+}
+
+.title_128 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #f9f6f2;
+    background: #e6db7c;
+}
+
+.title_256 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #f9f6f2;
+    background: #ebd939;
+}
+
+.title_512 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #f9f6f2;
+    background: #e9d414;
+}
+
+.title_1024 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #f9f6f2;
+    background: #bdab10;
+}
+.title_2048 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #f9f6f2;
+    background: #918308;
+}
+
+
+
+
+.poz_1_1 {
+    transform: translate(6px,6px);
+}
+
+.poz_2_1 {
+    transform: translate(6px,131px);
+}
+
+.poz_3_1 {
+    transform:  translate(6px,254px);
+}
+.poz_4_1 {
+    transform:  translate(6px,377px);
+}
+.poz_1_2 {
+    transform: translate(132px, 6px);
+}
+
+.poz_2_2 {
+    transform:  translate(132px, 131px);
+}
+.poz_3_2 {
+    transform:  translate(132px, 254px);
+}
+.poz_4_2 {
+    transform: translate(132px, 377px);
+}
+.poz_1_3 {
+    transform: translate(257px, 6px);
+}
+
+.poz_2_3 {
+    transform:  translate(257px, 131px);
+}
+
+.poz_3_3 {
+    transform:  translate(257px, 254px);
+}
+
+.poz_4_3 {
+    transform: translate(257px, 377px);
+}
+
+.poz_1_4 {
+    transform: translate(382px, 6px);
+}
+
+.poz_2_4 {
+    transform:  translate(382px,131px);
+}
+
+.poz_3_4 {
+    transform:  translate(382px, 254px);
+}
+
+.poz_4_4 {
+    transform: translate(382px, 377px);
+}
+
+
+
+
+.title_new {
+    width: 100%;
+    
+    animation: changeSpace 0.17s linear forwards
+}
+.move_down1 {
+    animation: move-down1 0.08s linear forwards;
+}
+
+.move_down2 {
+    animation: move-down2 0.08s linear forwards;
+}
+.move_down3 {
+    animation: move-down3 0.08s linear forwards;
+}
+
+.move_left1 {
+    animation: move-left1 0.08s linear forwards;
+}
+
+.move_left2 {
+    animation: move-left2 0.08s linear forwards;
+}
+.move_left3 {
+    animation: move-left3 0.08s linear forwards;
+}
+
+.move_up1 {
+    animation: move-up1 0.08s linear forwards;
+}
+
+.move_up2 {
+    animation: move-up2 0.08s linear forwards;
+}
+.move_up3 {
+    animation: move-up3 0.08s linear forwards;
+}
+
+.move_right1 {
+    animation: move-right1 0.08s linear forwards;
+}
+
+.move_right2 {
+    animation: move-right2 0.08s linear forwards;
+}
+.move_right3 {
+    animation: move-right3 0.08s linear forwards;
+}
+
+@keyframes changeSpace {
+    0%,50% {   
+        transform: scale(0.4);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes move-down1 {
+    0% {
+        
+    }
+    100% {
+        top: 125px;
+    }
+
+}
+
+@keyframes move-down2 {
+    0% {
+        
+    }
+    100% {
+        top: 247px;
+    }
+
+}
+
+@keyframes move-down3 {
+    0% {
+        
+    }
+    100% {
+        top: 372px;
+    }
+
+}
+
+@keyframes move-left1 {
+    0% {
+        
+    }
+    100% {
+        left: -125px;
+    }
+
+}
+
+@keyframes move-left2 {
+    0% {
+        
+    }
+    100% {
+        left: -247px;
+    }
+
+}
+
+@keyframes move-left3 {
+    0% {
+        
+    }
+    100% {
+        left: -372px;
+    }
+
+}
+
+
+@keyframes move-right1 {
+    0% {
+        
+    }
+    100% {
+        left: 125px;
+    }
+
+}
+
+@keyframes move-right2 {
+    0% {
+        
+    }
+    100% {
+        left: 247px;
+    }
+
+}
+
+@keyframes move-right3 {
+    0% {
+        
+    }
+    100% {
+        left: 372px;
+    }
+
+}
+
+
+@keyframes move-up1 {
+    0% {
+        
+    }
+    100% {
+        up: -125px;
+    }
+
+}
+
+@keyframes move-up2 {
+    0% {
+        
+    }
+    100% {
+        up: -247px;
+    }
+
+}
+
+@keyframes move-up3 {
+    0% {
+        
+    }
+    100% {
+        up: -372px;
+    }
+
+}
+
+
+.win {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(171, 171, 187, 0.4);
+    font-size: 76px;
+    color: rgb(202, 235, 19);
+    z-index: 10;
+    visibility: hidden;
+}
+
+.lose {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(171, 171, 187, 0.4);
+    font-size: 76px;
+    color: rgb(224, 92, 52);
+    z-index: 10;
+    visibility: hidden;
+  
+}
